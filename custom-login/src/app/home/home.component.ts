@@ -38,8 +38,8 @@ export class HomeComponent implements OnInit {
         label: 'Java/Spring MVC Resource Server Example',
         url: 'https://github.com/okta/samples-java-spring-mvc/tree/master/resource-server',
       },
-    ]
-    this.oktaAuth.$authenticationState.subscribe(isAuthenticated => this.isAuthenticated = isAuthenticated)
+    ];
+    this.oktaAuth.$authenticationState.subscribe(isAuthenticated => this.isAuthenticated = isAuthenticated);
   }
 
   async ngOnInit() {
